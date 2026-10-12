@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mobil Garaj – Hesap Silme</title>
+  <style>
+    :root {
+      --bg: #f6f7f9;
+      --surface: #ffffff;
+      --text: #1c1d21;
+      --muted: #5b5f6a;
+      --accent: #e35400;
+      --border: #e2e4e9;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1c1d21;
+        --surface: #26282d;
+        --text: #f5f6f8;
+        --muted: #aaaeb8;
+        --accent: #ff7a2e;
+        --border: #3a3d44;
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 32px 16px 64px;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+
+    header img { width: 56px; height: 56px; border-radius: 14px; }
+    header .name { font-weight: 700; font-size: 20px; }
+    header .sub { color: var(--muted); font-size: 14px; }
+
+    h1 { font-size: 28px; line-height: 1.25; margin: 0 0 8px; }
+    h2 { font-size: 20px; margin: 32px 0 8px; }
+    .updated { color: var(--muted); font-size: 14px; margin-top: 0; }
+
+    a { color: var(--accent); }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin: 16px 0;
+    }
+
+    ol, ul { padding-left: 22px; }
+    li { margin: 4px 0; }
+
+    footer {
+      margin-top: 48px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="icon.png" alt="">
+    <div>
+      <div class="name">Mobil Garaj</div>
+      <div class="sub">Kişisel araç yönetimi uygulaması</div>
+    </div>
+  </header>
+
+  <h1>Mobil Garaj hesabınızı ve verilerinizi silme</h1>
+  <p class="updated">Son güncelleme: 12 Ekim 2026</p>
+
+  <p>
+    Mobil Garaj hesabınızı ve hesabınıza bağlı tüm verileri istediğiniz zaman kalıcı olarak silebilirsiniz.
+    Bunun için iki yol var.
+  </p>
+
+  <div class="card">
+    <h2 style="margin-top:0">Yol 1: Uygulama içinden (önerilen)</h2>
+    <ol>
+      <li>Mobil Garaj uygulamasını açın ve hesabınıza giriş yapın.</li>
+      <li>Alt menüden <strong>Daha Fazla</strong> sekmesine, ardından <strong>Ayarlar</strong>'a dokunun.</li>
+      <li><strong>Hesabımı sil</strong> düğmesine dokunun.</li>
+      <li>Onay penceresinde istenen kelimeyi (<strong>SİL</strong>) yazın ve <strong>Hesabımı sil</strong>'e dokunun.</li>
+    </ol>
+    <p>Hesabınız ve tüm verileriniz hemen silinir ve oturumunuz kapanır.</p>
+  </div>
+
+  <div class="card">
+    <h2 style="margin-top:0">Yol 2: E-posta ile</h2>
+    <p>
+      Uygulamaya erişiminiz yoksa, hesabınıza kayıtlı e-posta adresinden
+      <a href="mailto:{{CONTACT_EMAIL}}?subject=Mobil%20Garaj%20hesap%20silme%20talebi">{{CONTACT_EMAIL}}</a>
+      adresine <strong>"Mobil Garaj hesap silme talebi"</strong> konulu bir e-posta gönderin.
+      Talep, hesabın size ait olduğu doğrulandıktan sonra en geç 30 gün içinde yerine getirilir ve size bilgi verilir.
+    </p>
+  </div>
+
+  <h2>Silinen veriler</h2>
+  <ul>
+    <li>Hesabınız: e-posta adresiniz, şifreniz ve görünen adınız</li>
+    <li>Tüm araçlarınız ve kilometre geçmişi</li>
+    <li>Bakım kayıtları ve bakım planları, arızalar</li>
+    <li>Yakıt ve şarj kayıtları, masraflar</li>
+    <li>Alet çantası ve hatırlatıcılar</li>
+    <li>Yüklediğiniz tüm fotoğraf ve belgeler</li>
+    <li>Cihazınızdaki önbellek (uygulama içinden silindiğinde)</li>
+  </ul>
+
+  <h2>Saklanan veriler</h2>
+  <p>
+    Silme işleminden sonra hesabınıza ait hiçbir veri bilerek saklanmaz. Silinen veriler, altyapı
+    sağlayıcısının otomatik yedeklerinde en fazla 30 gün daha kalabilir ve bu sürenin sonunda yedeklerden de silinir.
+  </p>
+
+  <h2>Hesabı silmeden bazı verileri silmek</h2>
+  <p>
+    Hesabınızı korumak ama bazı verileri silmek isterseniz, uygulama içinde ilgili kaydı (ör. bir yakıt
+    dolumu, masraf veya belge) ya da aracın tamamını silebilirsiniz. Bir aracı sildiğinizde ona bağlı tüm
+    kayıtlar ve dosyalar da silinir.
+  </p>
+
+  <footer>
+    <a href="index.html">Mobil Garaj</a> · <a href="privacy.html">Gizlilik Politikası</a>
+  </footer>
+</main>
+</body>
+</html>
