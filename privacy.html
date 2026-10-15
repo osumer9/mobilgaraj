@@ -88,7 +88,7 @@
   </header>
 
   <h1>Gizlilik Politikası</h1>
-  <p class="updated">Son güncelleme: 12 Ekim 2026</p>
+  <p class="updated">Son güncelleme: 16 Ekim 2026</p>
 
   <p>
     Bu politika, Android için geliştirilen <strong>Mobil Garaj</strong> uygulamasının
@@ -101,12 +101,19 @@
   <ul>
     <li><strong>Hesap bilgileri:</strong> e-posta adresiniz, isteğe bağlı görünen adınız ve şifreniz.
       Şifreniz tek yönlü olarak şifrelenmiş (hash) biçimde saklanır; kimse, geliştirici dahil, şifrenizi göremez.</li>
+    <li><strong>Google ile giriş:</strong> "Google ile devam et" seçeneğini kullanırsanız Google, sizin onayınızla
+      yalnızca adınızı, e-posta adresinizi ve profil fotoğrafı bağlantınızı paylaşır; şifre oluşturulmaz.
+      Google hesabınızdaki başka hiçbir veriye (e-postalar, rehber, Drive vb.) erişilmez.</li>
     <li><strong>Araç bilgileri:</strong> marka, model, yıl, donanım, motor, vites, yakıt türü,
       isteğe bağlı plaka ve şasi numarası (VIN), kilometre, satın alma tarihi ve fiyatı, notlar.</li>
     <li><strong>Kayıtlarınız:</strong> bakım ve bakım planları, arızalar, yakıt dolumları,
       elektrikli şarjlar, masraflar, alet çantası ve hatırlatıcılar.</li>
     <li><strong>Yüklediğiniz dosyalar:</strong> araç fotoğrafları ve sizin seçtiğiniz fotoğraf ya da
       PDF belgeler (ör. ruhsat, poliçe, fatura). Bu belgeler sizin eklediğiniz kişisel bilgileri içerebilir.</li>
+    <li><strong>Araç paylaşımı:</strong> bir aracı paylaştığınızda veya bir araca katıldığınızda kimin hangi
+      araçta hangi rolle (düzenleyici, izleyici) bulunduğu saklanır. Davet kodlarının kendisi saklanmaz,
+      yalnızca tek yönlü şifrelenmiş özetleri tutulur. Kötüye kullanımı önlemek için hatalı kod denemeleri
+      bir gün süreyle kaydedilir.</li>
   </ul>
 
   <p><strong>Toplamadıklarımız:</strong> konum, rehber, arama kaydı, kamera erişimi, reklam kimliği,
@@ -121,17 +128,31 @@
     bakım ve hatırlatıcı bildirimleri göstermek. Verileriniz <strong>satılmaz</strong>, reklam için
     kullanılmaz ve üçüncü kişilerle paylaşılmaz.
   </p>
+  <p>
+    <strong>Sizin paylaştıklarınız:</strong> Bir aracı davet koduyla başka kullanıcılarla paylaşırsanız,
+    o aracın bilgileri ve kayıtları (bakım, arıza, yakıt ve şarj, kilometre, araca bağlı masraf ve
+    hatırlatıcılar) ile paylaşmayı seçtiğiniz dosyalar bu kişilere görünür. Gizli olarak işaretlediğiniz
+    dosyaları yalnızca siz görebilirsiniz. Aynı aracın üyeleri birbirinin görünen adını ve e-posta adresinin
+    kısaltılmış hâlini (ör. o***@ornek.com) görür. Paylaşımı istediğiniz zaman sonlandırabilirsiniz.
+  </p>
 
   <h2>3. Verilerin saklandığı yer ve güvenlik</h2>
   <ul>
     <li>Veriler, uygulamanın altyapı sağlayıcısı <a href="https://supabase.com/privacy">Supabase</a>
       üzerinde (veritabanı, kimlik doğrulama ve dosya deposu) saklanır. Supabase, verileri yalnızca bizim
       adımıza ve hizmeti sunmak için işler.</li>
-    <li>Sunucular <strong>Güney Kore'de (Seul)</strong> bulunur. Uygulamayı kullandığınızda verileriniz
-      bu nedenle yurt dışına aktarılır ve orada saklanır.</li>
+    <li>Sunucular <strong>Avrupa Birliği'nde, Almanya'da (Frankfurt)</strong> bulunur. Uygulamayı kullandığınızda
+      verileriniz bu nedenle yurt dışına aktarılır ve orada saklanır.</li>
+    <li>15 Ekim 2026'ya kadar sunucular Güney Kore'deydi (Seul); veriler bu tarihte Frankfurt'a taşındı.
+      Seul'de kalan kopya en geç 15 Kasım 2026'da silinir.</li>
     <li>Uygulama ile sunucu arasındaki tüm bağlantılar HTTPS (TLS) ile şifrelenir.</li>
-    <li>Sunucuda satır düzeyinde erişim kuralları vardır: her kullanıcı yalnızca kendi verisine erişebilir.</li>
-    <li>Dosyalar herkese açık olmayan bir depoda tutulur ve yalnızca süreli, imzalı bağlantılarla açılır.</li>
+    <li>Sunucuda satır düzeyinde erişim kuralları vardır: her kullanıcı yalnızca kendi verisine ve kendisiyle
+      paylaşılan araçların verisine, aracın sahibinin verdiği role göre erişebilir.</li>
+    <li>Dosyalar herkese açık olmayan bir depoda tutulur ve yalnızca oturum açmış, yetkili kullanıcılar
+      tarafından açılabilir.</li>
+    <li>Bir aracın paylaşımı sona erdiğinde o kişinin sunucudaki erişimi hemen kapanır ve uygulamadaki
+      kopyalar bir sonraki eşitlemede silinir. Ancak daha önce indirilmiş, kaydedilmiş veya başka
+      uygulamalarla paylaşılmış kopyalar geri alınamaz.</li>
     <li>Çevrimdışı görüntüleme için verilerin bir kopyası cihazınızda önbellekte tutulur. Oturumu
       kapattığınızda bu önbellek silinir.</li>
   </ul>
@@ -145,9 +166,11 @@
   <h2>5. Saklama süresi ve silme</h2>
   <ul>
     <li>Verileriniz hesabınız açık olduğu sürece saklanır.</li>
-    <li>Uygulamada sildiğiniz kayıtlar ve dosyalar sunucudan hemen silinir.</li>
+    <li>Uygulamada sildiğiniz kayıtlar sunucudan hemen, dosyalar en geç 24 saat içinde silinir.</li>
     <li>Hesabınızı silebilirsiniz: <strong>Daha Fazla → Ayarlar → Hesabımı sil</strong>. Bu işlem hesabınızı,
-      tüm araçlarınızı, kayıtlarınızı ve dosyalarınızı kalıcı olarak siler. Ayrıntılar ve uygulamaya
+      tüm araçlarınızı, kayıtlarınızı ve dosyalarınızı kalıcı olarak siler. Başkasının aracına eklediğiniz
+      kayıtlar o araçta kalır; o araçlara eklediğiniz masraf ve hatırlatıcılar aracın sahibine devredilir.
+      Gizli belgeleriniz kimseye devredilmez, silinir. Ayrıntılar ve uygulamaya
       erişiminiz yoksa izlenecek yol için <a href="delete-account.html">Hesap silme</a> sayfasına bakın.</li>
     <li>Silinen veriler, altyapı sağlayıcısının otomatik yedeklerinde en fazla 30 gün daha kalabilir
       ve bu sürenin sonunda yedeklerden de silinir.</li>
